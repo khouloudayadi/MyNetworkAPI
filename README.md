@@ -27,13 +27,17 @@ Créez d'abord un environnement virtuel et installez les dépendances en exécut
 - pour Ubuntu 16.04:
 
 	python3 -m venv venv
+	
 	source venv/bin/activate
+	
 	pip install -r requirements.txt
 
 - pour windows 10
 
 	python -m venv venv
+	
 	.\venv\Scripts\activate
+	
 	pip install -r requirements.txt
 
 
@@ -44,11 +48,11 @@ exécutez le serveur localement en tapant
 
 ## Étape 5: 
 Pour tester la méthode qui permet de prédire le temps de disponibilité de la connectivité réseau grâce à Postman:
-	1- Sélectionnez le type de requête à envoyer : POST
-	2- Ajoutez L'URL de l'API :  http://127.0.0.1:8000/predict
-	3- Cliquez sur l'onglet Body qui n'est plus grisé, puis sélectionnez raw pour définir manuellement le contenu de la requête Http
-	4- Sélectionnez à droite JSON à la place de Text afin d'indiquer dans notre requête le type de données que nous envoyons
-	5- Collez ensuite un JSON avec les informations d'un requête, par exemple :{"start_lat":35.8626285,"start_lon":10.5999459,"end_lat":35.677692,"end_lon":10.096388,"vitesse":0.11869553476572037,"timeStamp":"1604443367000","network":"3G"}
+	- Sélectionnez le type de requête à envoyer : POST
+	- Ajoutez L'URL de l'API :  http://127.0.0.1:8000/predict
+	- Cliquez sur l'onglet Body qui n'est plus grisé, puis sélectionnez raw pour définir manuellement le contenu de la requête Http
+	- Sélectionnez à droite JSON à la place de Text afin d'indiquer dans notre requête le type de données que nous envoyons
+	- Collez ensuite un JSON avec les informations d'un requête, par exemple :{"start_lat":35.8626285,"start_lon":10.5999459,"end_lat":35.677692,"end_lon":10.096388,"vitesse":0.11869553476572037,"timeStamp":"1604443367000","network":"3G"}
 
 ## Étape 6: 
 Pour tester la méthode qui permet de prédire le temps de disponibilité de la connectivité réseau grâce à Postman, après le déploiement sur IBM Cloud :
